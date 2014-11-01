@@ -105,8 +105,9 @@ width:80%;
 #msg-send{
 float:left;
 display:block;
-width:18%;
-font-size:12px;
+height: 30px;
+line-height: 10px;
+width: 25%;
 margin:0 2%;
 
 }

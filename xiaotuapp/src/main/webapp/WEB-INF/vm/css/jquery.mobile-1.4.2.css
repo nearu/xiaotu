@@ -1505,7 +1505,9 @@ div.ui-mobile-viewport {
 }
 /* Buttons and icons */
 .ui-btn {
-	
+	font-family: '\5FAE\8F6F\96C5\9ED1','Open Sans','Arial','sans-serif';
+	font-size:1em;
+	font-weight:normal;
 	margin: .5em 0;
 	padding: .7em 1em;
 	display: block;
@@ -2461,12 +2463,12 @@ button.ui-btn-icon-notext,
 }
 .ui-field-contain > label ~ [class*="ui-"],
 .ui-field-contain .ui-controlgroup-controls {
-	margin: 0;
+	margin: 0.6em 0;
 }
 .ui-field-contain:last-child {
 	border-bottom-width: 0;
 }
-@media (min-width: 28em) {
+@media (min-width: 8em) {
 	.ui-field-contain,
 	.ui-mobile fieldset.ui-field-contain {
 		padding: 0;
@@ -2498,7 +2500,7 @@ button.ui-btn-icon-notext,
 	.ui-field-contain > label ~ [class*="ui-"],
 	.ui-field-contain .ui-controlgroup-controls {
 		float: left;
-		width: 78%;
+		width: 72%;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-ms-box-sizing: border-box;
