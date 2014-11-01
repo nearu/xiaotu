@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>
             My Page
         </title>
@@ -30,43 +31,56 @@
 			
   <div data-role="content">
 
+  	  </div>	
   
-  
-<ul data-role="listview" data-inset="true">
-    <li ><a href="#">
-        <img src="img/p1.jpg">
-    <h2>Broken Bells</h2>
-    <p>Broken Bells</p></a> <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"  class="ui-icon-shop">Purchase album</a>
-   
-   </li>
-    <li><a href="#">
-        <img src="img/p1.jpg">
-    <h2>Warning</h2>
-    <p>Hot Chip</p></a> <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-icon-shop">Purchase album</a>
-    </li>
-    <li><a href="#">
-        <img src="img/p1.jpg">
-    <h2>Wolfgang Amadeus Phoenix</h2>
-    <p>Phoenix</p></a> <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-icon-shop">Purchase album</a>
-    </li>
-</ul>
-
-<div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
-    <h3>Purchase Album?</h3>
-<p>Your download will begin immediately on your mobile device when you purchase.</p>
-    <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Buy: $10.99</a>
-    <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Cancel</a>
-</div>
-		  </div>	
 			
 			
             <div data-role="footer" id="footer">
+			 <div data-role="tabs" id="tabs">
         <div data-role="navbar">
+		
             <ul>
-                <li><a href="#" data-icon="grid">发布商品</a></li>
-                <li><a href="#" data-icon="gear">我的</a></li>
+                <li><a href="#add-goods" data-icon="grid">发布商品</a></li>
+                <li><a href="#manage-goods" data-icon="gear">我的</a></li>
             </ul>
         </div><!-- /navbar -->
+		
+		    <div id="add-goods" class="ui-body-d tab-content" >
+						
+				<ul data-role="listview" data-inset="true">
+					<li ><a href="#">
+						<img src="img/p1.jpg">
+					<h2>Broken Bells</h2>
+					<p>Broken Bells</p></a> <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"  class="ui-icon-shop">Purchase album</a>
+				   
+				   </li>
+					<li><a href="#">
+						<img src="img/p1.jpg">
+					<h2>Warning</h2>
+					<p>Hot Chip</p></a> <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-icon-shop">Purchase album</a>
+					</li>
+					<li><a href="#">
+						<img src="img/p1.jpg">
+					<h2>Wolfgang Amadeus Phoenix</h2>
+					<p>Phoenix</p></a> <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-icon-shop">Purchase album</a>
+					</li>
+				</ul>
+
+				<div data-role="popup" id="purchase" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+					<h3>Purchase Album?</h3>
+				<p>Your download will begin immediately on your mobile device when you purchase.</p>
+					<a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Buy: $10.99</a>
+					<a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Cancel</a>
+				</div>
+	
+                    </div><!--map-->
+			 <div id="manage-goods" class="ui-body-d tab-content" >
+						
+                    </div><!--map-->
+		
+		
+		
+		</div>
 </div><!-- /footer -->
         </div><!-- /page -->
         <script type="text/javascript">
