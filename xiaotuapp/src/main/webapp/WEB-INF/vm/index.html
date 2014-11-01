@@ -27,6 +27,7 @@
                 <h1>
                     校图
                 </h1>
+			 <button id="user-button"class="ui-btn-right ui-btn  ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-user">Rcmeng 001</button>
             </div><!-- /header -->
             <div data-role="footer" id="footer">
                 <div data-role="tabs" id="tabs">
@@ -45,21 +46,28 @@
                     </div>
                     <div id="map" class="ui-body-d tab-content" >
 						<a id="map-qinshi" class="hot-spot" href="dormitary_map.html" data-ajax="false"></a>
-						<a id="map-jiaoshi"class="hot-spot" href="classrooms.html"></a>
+						<a id="map-jiaoshi"class="hot-spot" href="classroom_map.html" data-ajax="false"></a>
                     </div><!--map-->
                     <div id="search" class="ui-body-d tab-content">
                         <div data-role="content">
-                            <input type="search" name="password" id="search" value="" placeholder="Placeholder text..."> <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-bars" href="#mypanel">Add</a> <button type="button" data-icon="gear" data-iconpos="right" data-mini="true" data-inline="true" id="add">Add</button> <button type="button" data-icon="plus" data-iconpos="right" data-mini="true" data-inline="true" id="expand">Expand last</button> <button type="button" data-icon="minus" data-iconpos="right" data-mini="true" data-inline="true" id="collapse">Collapse last</button>
-                            <div data-role="collapsibleset" data-content-theme="a" data-iconpos="right" id="set">
-                                <div data-role="collapsible" id="set1" data-collapsed="true">
-                                    <h3>
-                                        Section 1
-                                    </h3>
-                                    <p>
-                                        I'm the collapsible content.
-                                    </p>
-                                </div>
-                            </div>
+                           	<div class="ui-corner-all good-box">				  
+							<div class="ui-body ui-body-a ui-corner-all">
+							<input type="search" name="password" id="search" value="" placeholder="Placeholder text...">
+                            	</div>
+				  </div>
+							<div class="ui-corner-all good-box">				  
+							<div class="ui-body ui-body-a ui-corner-all">
+							<ul data-role="listview" data-inset="true">
+								<li><a href="dormitary_map.html" data-ajax="false">碧峰3舍 301</a></li>
+								<li><a href="dormitary_map.html" data-ajax="false">碧峰3舍 302</a></li>
+								<li><a href="dormitary_map.html" data-ajax="false">碧峰3舍 304</a></li>
+								<li><a href="dormitary_map.html" data-ajax="false">碧峰3舍 306</a></li>
+								<li><a href="dormitary_map.html" data-ajax="false">碧峰3舍 309</a></li>
+							</ul>
+						</div>
+				  </div>
+							
+							
                         </div>
                     </div><!--search-->
                 </div>
@@ -67,21 +75,18 @@
         </div><!-- /page -->
         <script type="text/javascript">
 $( document ).on( "pagecreate", function() {
-        var nextId = 1;
-        $("#add").click(function() {
-        nextId++;
-        var content = "<div data-role='collapsible' id='set" + nextId + "'><h3>Section " + nextId + "<\/h3><p>I am the collapsible content in a set so this feels like an accordion. I am hidden by default because I have the 'collapsed' state; you need to expand the header to see me.<\/p><\/div>";
-        $( "#set" ).append( content ).collapsibleset( "refresh" );
+			var nextId = 1;
+			$("#add").click(function() {
+			nextId++;
+			var content = "<div data-role='collapsible' id='set" + nextId + "'><h3>Section " + nextId + "<\/h3><p>I am the collapsible content in a set so this feels like an accordion. I am hidden by default because I have the 'collapsed' state; you need to expand the header to see me.<\/p><\/div>";
+			$( "#set" ).append( content ).collapsibleset( "refresh" );
+			});
+			$( "#expand" ).click(function() {
+			$("#set").children(":last").collapsible( "expand" );
+			});
+			$( "#collapse" ).click(function() {
+			$( "#set" ).children( ":last" ).collapsible( "collapse" );
         });
-        $( "#expand" ).click(function() {
-        $("#set").children(":last").collapsible( "expand" );
-        });
-        $( "#collapse" ).click(function() {
-        $( "#set" ).children( ":last" ).collapsible( "collapse" );
-        });
-      
-
-                
               //Dynamic toolbars  
 
         $( "#footer")

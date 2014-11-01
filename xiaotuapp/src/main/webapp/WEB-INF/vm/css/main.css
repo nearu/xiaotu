@@ -9,16 +9,16 @@ width:100%;
 
 }
 
-#mypanel-button{
-margin:3px;
-
+#mypanel-button,#user-button{
+margin:3px 0;
+font-weight:normal;
 
 }
 .hot-spot{
 display:block;
 position:absolute;
 width:180px;
-height:180px;
+height:120px;
 background:rgba(33,116,199,0.2);
 
 }
@@ -29,6 +29,9 @@ background:rgba(33,116,199,0.2);
 width:100%;
 background:url("../img/map.jpg");
 background-size:360px auto;
+
+background-attachment:fixed;
+background-position:0px 0;
 height:100%;
 z-index:5;
 }
@@ -41,14 +44,14 @@ width:100%;
 #map #map-qinshi{
 
 
-top:100px;
+top:50px;
 left:20px;
 
 }
 #map #map-jiaoshi{
 
 
-top:330px;
+top:280px;
 left:20px;
 
 }
@@ -71,8 +74,9 @@ font-size:24px;
 
 .msg-container{
 width:100%;
-margin:10px 0;
+margin: 10px 0;
 
+clear: both;
 }
 .msg-photo{
 float:left;

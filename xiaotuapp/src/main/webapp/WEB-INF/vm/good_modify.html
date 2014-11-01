@@ -30,7 +30,7 @@
 			
             </div><!-- /header -->
             <div data-role="content">
-			 <form>
+			 <form id="form1" name="form1">
                     <ul data-role="listview" data-inset="true">
                        
 					    <li class="ui-field-contain">
@@ -55,29 +55,30 @@
 							<input type="number" name="number"  id="number-pattern" value="">
                         </li>
                         <li class="ui-field-contain">
-							<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-								<legend>送货时间：</legend>
-								<input type="checkbox" name="checkbox-1" id="checkbox-1" >
-								<label for="checkbox-1">周一</label>
-								<input type="checkbox" name="checkbox-2" id="checkbox-2" >
-								<label for="checkbox-2">周二</label>
-								<input type="checkbox" name="checkbox-3" id="checkbox-3">
-								<label for="checkbox-3">周三</label>
-								<input type="checkbox" name="checkbox-4" id="checkbox-4">
-								<label for="checkbox-4">周四</label>
-								<input type="checkbox" name="checkbox-5" id="checkbox-5">
-								<label for="checkbox-5">周五</label>
-								<input type="checkbox" name="checkbox-6" id="checkbox-6">
-								<label for="checkbox-6">周六</label>
-								<input type="checkbox" name="checkbox-7" id="checkbox-7">
-								<label for="checkbox-7">周日</label>
-							</fieldset>
+							<fieldset data-role="controlgroup" data-mini="true">
+									<legend>送货时间：</legend>
+									<input type="checkbox" name="checkbox1" id="checkbox1">
+									<label for="checkbox1">周一</label>
+									<input type="checkbox" name="checkbox2" id="checkbox2">
+									<label for="checkbox2">周二</label>
+									<input type="checkbox" name="checkbox3" id="checkbox3">
+									<label for="checkbox3">周三</label>
+									<input type="checkbox" name="checkbox4" id="checkbox4">
+									<label for="checkbox4">周四</label>
+									<input type="checkbox" name="checkbox5" id="checkbox5">
+									<label for="checkbox5">周五</label>
+									<input type="checkbox" name="checkbox6" id="checkbox6">
+									<label for="checkbox6">周六</label>
+									<input type="checkbox" name="checkbox7" id="checkbox7">
+									<label for="checkbox7">周日</label>
+								</fieldset>
+												
 												
 						
 						</li>
                         <li class="ui-body ui-body-b">
                             <fieldset class="ui-grid-a">
-                                <a href="#purchase" class="ui-shadow  ui-btn ui-corner-all ui-btn-a ui-icon-shop">确认修改</a>
+                                <a onclick="document.getElementById('form1').submit();"  class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left">确认修改</a>
                             </fieldset>
                         </li>
                     </ul>
