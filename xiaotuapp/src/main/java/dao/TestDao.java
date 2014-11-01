@@ -8,11 +8,9 @@ public class TestDao extends Dao {
 
 
 	@SuppressWarnings("deprecation")
-	public void getMsg(){
-    	System.out.println("123aaaaaaaaaaaaaa");
-    	System.out.println("TestDao-ibatis.test");
+	public String getMsg(){
     	String msg = (String) this.getSqlMapClientTemplate().queryForObject("TestDao.select");
-    	System.out.println(msg);
+    	return msg;
     }
 }
 

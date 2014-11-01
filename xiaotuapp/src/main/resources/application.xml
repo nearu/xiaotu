@@ -25,14 +25,14 @@
 			<value>com.mysql.jdbc.Driver</value>
 		</property>
 		<property name="url">
-			<value>jdbc:mysql://sqld.duapp.com:4050/gJLVSzVxcmbZEXqttDyu
+			<value>jdbc:mysql://localhost:3306/xiaotu
 			</value>
 		</property>
 		<property name="username">
-			<value>ULQLRO9GsoaXQAv6GsFG8zt1</value>
+			<value>root</value>
 		</property>
 		<property name="password">
-			<value>b1qpGTAzqzGKGK7ddBOuI8eIoU1RLe6U</value>
+			<value></value>
 		</property>
 	</bean>
 	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
