@@ -1,0 +1,158 @@
+
+
+/* ==================================================
+   Basic Styles
+================================================== */
+#footer{
+
+width:100%;
+
+}
+
+#mypanel-button{
+margin:3px;
+
+
+}
+.hot-spot{
+display:block;
+position:absolute;
+width:180px;
+height:180px;
+background:rgba(33,116,199,0.2);
+
+}
+
+
+#map{
+
+width:100%;
+background:url("../img/map.jpg");
+background-size:360px auto;
+height:100%;
+z-index:5;
+}
+.tab-content{
+position:fixed;
+top:50px;
+width:100%;
+
+}
+#map #map-qinshi{
+
+
+top:100px;
+left:20px;
+
+}
+#map #map-jiaoshi{
+
+
+top:330px;
+left:20px;
+
+}
+
+
+
+h1 {
+font-size:24px;
+}
+
+
+/* ==================================================
+   Massage
+================================================== */
+
+
+.msg-container{
+width:100%;
+margin:10px 0;
+
+}
+.msg-photo{
+float:left;
+display:block;
+width:10%;
+margin-right:2%;
+max-width:60px;
+
+}
+
+
+
+.msg-content {
+float:left;
+width:80%;
+padding-left:10px;
+
+
+}
+
+.msg-send-container{
+width:100%;
+margin:20px 0 0 0 ;
+
+
+}
+#msg-input{
+float:left;
+width:80%;
+
+
+}
+
+#msg-send{
+float:left;
+display:block;
+width:18%;
+font-size:12px;
+margin:0 2%;
+
+}
+
+
+
+/* ==================================================
+   Margin Bottom Sets
+================================================== */
+
+.margin-0{
+	margin-bottom:0 !important;
+}
+
+.margin-10{
+	margin-bottom:10px !important;
+}
+
+.margin-15{
+	margin-bottom:15px !important;
+}
+
+.margin-20{
+	margin-bottom:20px !important;
+}
+
+.margin-30{
+	margin-bottom:30px !important;
+}
+
+.margin-40{
+	margin-bottom:40px !important;
+}
+
+.margin-50{
+	margin-bottom:50px !important;
+}
+
+.margin-60{
+	margin-bottom:60px !important;
+}
+
+.margin-70{
+	margin-bottom:70px !important;
+}
+
+.margin-80{
+	margin-bottom:80px !important;
+}
