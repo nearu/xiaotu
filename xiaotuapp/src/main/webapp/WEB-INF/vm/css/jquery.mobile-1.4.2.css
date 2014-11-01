@@ -2500,7 +2500,7 @@ button.ui-btn-icon-notext,
 	.ui-field-contain > label ~ [class*="ui-"],
 	.ui-field-contain .ui-controlgroup-controls {
 		float: left;
-		width: 72%;
+		width: 70%;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-ms-box-sizing: border-box;
@@ -2914,7 +2914,7 @@ fieldset.ui-controlgroup {
 	margin: 0;
 }
 .ui-mini .ui-controlgroup-label {
-	font-size: 16px;
+	font-size: 12.5px;
 }
 .ui-controlgroup.ui-mini .ui-btn-icon-notext,
 .ui-controlgroup .ui-mini.ui-btn-icon-notext {

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            My Page
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/theme_m.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" type="text/css">
+        <script src="js/jquery.js" type="text/javascript">
+</script>
+        <script src="js/jquery.mobile-1.4.2.js" type="text/javascript">
+</script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="panel" id="mypanel">
+                <!-- panel content goes here -->
+            </div><!-- /panel -->
+            <div data-role="header">
+                <!--a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-bars" href="#mypanel">Add</a-->
+                 <a id="mypanel-button" class="ui-btn-left ui-shadow ui-corner-all ui-btn ui-icon-back ui-btn-icon-notext" href="dormitary_map.html" data-ajax="false">返回上一页</a>
+                <h1>
+                    碧峰3 - 214
+                </h1>
+            </div><!-- /header -->
+			
+  <div data-role="content">
+
+  
+			 <div data-role="tabs" id="tabs">
+        <div data-role="navbar">
+		
+            <ul>
+                <li><a href="#choose-goods" data-icon="gear"  class="ui-btn-active">商铺</a></li>
+                <li><a href="#apply-permission" data-icon="grid">联系</a></li>
+            </ul>
+        </div><!-- /navbar -->
+		
+		    <div id="choose-goods" class="ui-body-d  tab-list-content" >
+						
+
+			<ul data-role="listview" data-inset="true">
+				<li><a href="good_detail_o.html" data-ajax="false">
+					<img src="img/p1.jpg">
+				<h2>Broken Bells</h2>
+				<p>Broken Bells</p></a>
+				</li>
+				<li><a href="good_detail_o.html" data-ajax="false">
+					<img src="img/p1.jpg">
+				<h2>Warning</h2>
+				<p>Hot Chip</p></a>
+				</li>
+				<li><a href="good_detail_o.html" data-ajax="false">
+					<img src="img/p1.jpg">
+				<h2>Wolfgang Amadeus Phoenix</h2>
+				<p>Phoenix</p></a>
+				</li>
+			</ul>
+
+                    </div><!--map-->
+			 <div id="apply-permission" class="ui-body-d " >
+						
+                    </div><!--map-->
+		
+		
+		
+		</div>
+        </div><!-- /page -->
+        <script type="text/javascript">
+$( document ).on( "pagecreate", function() {
+        var footerHeight=64;
+     
+        $.mobile.resetActivePageHeight();
+                
+                    });
+        </script>
+    </body>
+</html>
+			<!--li><a href="#">
+						<img src="img/p1.jpg">
+					<h2>Warning</h2>
+					<p>Hot Chip</p></a> <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-icon-shop">Purchase album</a>
+					</li-->

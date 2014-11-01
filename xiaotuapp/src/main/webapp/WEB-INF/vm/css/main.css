@@ -53,7 +53,11 @@ left:20px;
 
 }
 
+#map_d{
 
+height:100%;
+overflow:hidden;
+}
 
 h1 {
 font-size:24px;
@@ -105,8 +109,7 @@ width:80%;
 #msg-send{
 float:left;
 display:block;
-height: 30px;
-line-height: 10px;
+
 width: 25%;
 margin:0 2%;
 
@@ -119,14 +122,26 @@ margin:0 2%;
    Shop
 ================================================== */
 
-#add-goods{
-margin:15px;
+.tab-list-content{
+margin:2.5%;
+width:95%;
+
+
+}
+.good-box{
+
+margin-bottom:15px;
 
 
 }
 
+.good-pic{
+display:block;
+width:100%;
+max-width:420px;
 
 
+}
 /* ==================================================
    Margin Bottom Sets
 ================================================== */
