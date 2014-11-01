@@ -4,7 +4,7 @@ package dao;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TestDao extends Dao {
+public class TestDao extends DAO {
 
 
 	@SuppressWarnings("deprecation")

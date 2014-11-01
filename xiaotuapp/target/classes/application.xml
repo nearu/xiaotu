@@ -43,4 +43,6 @@
 			<ref bean="mysqldataSource" />
 		</property>
 	</bean>
+	<bean id="accountManager" class="ManagerImpl.AccountManagerImpl">
+	</bean>
 </beans>

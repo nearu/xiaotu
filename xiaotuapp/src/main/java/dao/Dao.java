@@ -9,7 +9,7 @@ import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 import com.ibatis.sqlmap.client.SqlMapClient;
 
 @SuppressWarnings({ "restriction" })
-public class Dao extends SqlMapClientDaoSupport {
+public class DAO extends SqlMapClientDaoSupport {
 	@Resource(name = "sqlMapClient")
 	public SqlMapClient sqlMapClient;
 

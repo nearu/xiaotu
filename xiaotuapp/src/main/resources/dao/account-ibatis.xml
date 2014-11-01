@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" 
+  "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="test-ibatis">
+	<resultMap id="account" class="datadomain.AccountDO">
+		<result column="ID" property="id" />
+		<result column="ACCOUNT_ID" property="accountId" />
+		<result column="CREATE_DATE" property="createDate" />
+		<result column="MODIFY_DATE" property="modifyDate" />
+		<result column="NAME" property="name" />
+		<result column="STU_ID" property="stuId" />
+		<result column="PASSWORD" property="password" />
+	</resultMap>
+	<select id="AccountDAO.getAccount" resultMap="account"
+		parameterClass="map">
+		SELECT * FROM account where account_id=#account_id#;
+	</select>
+	<insert id="AccountDAO.insertAccount" parameterClass="datadomain.AccountDO">
+		<![CDATA[
+	        INSERT INTO MMP_SUB_ACCOUNT_BATCH 
+	            (ID ,
+	             ACCOUNT_ID,
+	             NAME,
+	             STU_ID,
+	             PASSWORD,
+		         CREATE_DATE,
+		         MODIFY_DATE
+		        )
+	        VALUES
+	           (#id#,
+	            #accountId#,
+	            #name#,
+	            #stuId#,
+	            #password#,
+	            now(),
+	            now()
+	           )
+        ]]>
+	</insert>
+</sqlMap>
